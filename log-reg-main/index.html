@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h1>Welcome to Login, Registration System</h1>
+        <button class="btn btn-primary mt-3" onclick="showForm('register')">Register</button>
+        <button class="btn btn-success mt-3" onclick="showForm('login')">Login</button>
+    </div>  
+    <from class="container mt-3 d-none" id="registerForm">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <h3 class="text-center">Register</h3>
+                    <input type="text" id="regFullname" class="form-control mb-2" placeholder="Full Name">
+                    <input type="email" id="regEmail" class="form-control mb-2" placeholder="Email">
+                    <input type="password" id="regPassword" class="form-control mb-2" placeholder="Password">
+                    <button class="btn btn-primary w-100" onclick="register()">Register</button>
+                </div>
+            </div>
+        </div>
+    </from>
+    <form class="container mt-3 d-none" id="loginForm">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card p-4">
+                    <h3 class="text-center">Login</h3>
+                    <input type="email" id="loginEmail" class="form-control mb-2" placeholder="Email">
+                    <input type="password" id="loginPassword" class="form-control mb-2" placeholder="Password">
+                    <button class="btn btn-success w-100" onclick="login()">Login</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    
+    <script src="index.js"></script>
+</body>
+</html>
