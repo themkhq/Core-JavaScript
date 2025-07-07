@@ -1,1 +1,1 @@
-This is for javascript
+This is for javascript ES6
